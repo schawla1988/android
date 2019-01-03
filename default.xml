@@ -23,7 +23,7 @@ limitations under the License.
   <remote name="svmp"
           fetch="https://github.com/SVMP/" />
 
-  <default revision="refs/tags/android-4.4.4_r2"
+  <default revision="refs/tags/android-8.1.0_r9"
            remote="aosp"
            sync-j="4" />
 
