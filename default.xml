@@ -15,7 +15,8 @@ limitations under the License.
 <manifest>
 
   <remote name="aosp"
-          fetch="https://android.googlesource.com/" />
+          fetch="https://android.googlesource.com/" 
+          review="https://android-review.googlesource.com/"/>
 
   <remote name="github"
           fetch="https://github.com/" />
@@ -23,7 +24,7 @@ limitations under the License.
   <remote name="svmp"
           fetch="https://github.com/SVMP/" />
 
-  <default revision="refs/tags/android-8.1.0_r9"
+  <default revision="refs/tags/android-8.1.0_r60"
            remote="aosp"
            sync-j="4" />
 
@@ -484,10 +485,5 @@ limitations under the License.
 
   <!-- SVMP Extra external dependancies -->
   <project path="kernel/android" remote="svmp" revision="svmp-2.x" name="android-kernel" />
-
-  <!-- mesa graphics experiment, disabled for now -->
-  <project path="external/mesa3d" remote="github" revision="svmp-2.x" name="SVMP/android_external_mesa3d" />
-  <project path="external/llvm" remote="github" revision="svmp-2.x" name="SVMP/android_external_llvm" groups="pdk" />
-  <project path="hardware/intel/hwcomposer" remote="github" revision="release/android-4.2.2_r1-ia3" name="android-ia/hardware_intel_hwcomposer" />
 
 </manifest>
